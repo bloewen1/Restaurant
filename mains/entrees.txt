@@ -1,0 +1,32 @@
++-------------------------------------+
+|                Mains                |
+|-------------------------------------|
+| 1. Pizza slice          $3.50       |
+|    - Pepperoni                      |
+|    - Cheese                         |
+|    - Hawaiian                       |
+|                                     |
+| 2. Pasta                $9.00       |
+|    Comes with your choice of:       |
+|      - Meat sauce                   |
+|      - Four cheese sauce            |
+|                                     |
+| 3. Burger               $16.00      |
+|    Comes with a side                |
+|      - Fries                        |
+|      - Onion rings +0.50            |
+|                                     |
+| 4. Steak                $27.00      |
+|    Comes with a side                |
+|      - Mashed Potatoes              |
+|      - Baked Potato                 |
+|      - Cole Slaw                    |
+|                                     |
+| 5. Tacos                $13.00      |
+|    - Al Pastor                      |
+|      (Pork, pineapple, cilantro)    |
+|    - De Carnitas                    |
+|      (Pulled Pork, onion, cilantro) | 
+|    - De Pescado                     |
+|      (Fish, pico de gallo, avocado) |
++-------------------------------------+

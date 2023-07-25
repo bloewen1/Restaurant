@@ -1,0 +1,13 @@
++-------------------------------------------+
+|                  Dessert                  |
+|-------------------------------------------|
+| 1. Slice of Apple Pie            $11.50   |
+|                                           |
+| 2. Slice of Cherry Pie           $11.50   |
+|                                           |
+| 3. Slice of Chocolate Cake       $9.00    |
+|                                           |
+| 4. Ice Cream Cone                $5.00    |
+|                                           |
+| 5. Jumbo Chocolate Chip Cookie   $6.00    |
++-------------------------------------------+
