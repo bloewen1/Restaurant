@@ -6,10 +6,9 @@
 |    - Cheese                         |
 |    - Hawaiian                       |
 |                                     |
-| 2. Pasta                $9.00       |
-|    Comes with your choice of:       |
-|      - Meat sauce                   |
-|      - Four cheese sauce            |
+| 2. Chicken Sandwich     $10.00      |
+|    - Add Spicy Sauce  +0.50         |
+|    - Add Extra Meat +1.00           |
 |                                     |
 | 3. Burger               $16.00      |
 |    Comes with a side                |

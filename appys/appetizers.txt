@@ -1,0 +1,21 @@
++-------------------------------------+
+|             Appetizers              |
+|-------------------------------------|
+| 1. Caesar Salad         $4.50       |
+|    - Add bacon                      |
+|                                     |
+| 2. Soup                 $5.50       |
+|    - Tomato                         |
+|    - French Onion                   |
+|                                     |
+| 3. Nachos               $6.00       |
+|    - Add Queso Dip +0.50            |
+|                                     |
+| 4. Soft Pretzel         $3.00       |
+|    - Add Cheese Dip +0.50           |
+|                                     |
+| 5. Wings                $7.50       |
+|    - Honey Garlic                   |
+|    - Salt and Pepper                |
+|    - Spicy Buffalo                  |
++-------------------------------------+
