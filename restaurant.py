@@ -2,7 +2,9 @@ from time import sleep
 
 order = []
 message = "\nType the number of the item you would like to order.\nTo order nothing, type 0: "
-name = input("\nWelcome to The Restaurant™ my name is Wilfred and I will be your waiter.\n\nWhat is your name?: ")
+print("\nWelcome to The Restaurant™ my name is Wilfred and I will be your waiter.")
+sleep(0.7)
+name = input("\nWhat is your name?: ")
 print("\nWelcome {}! Let's get started!".format(name))
 
 def choices(max, min = 0, msg = message):
@@ -40,9 +42,17 @@ def drinks():
         else:
             items[num-1]["name"] = "Orange Juice"
         order.append(items[num-1])
+        with open(items[num-1]["image"], 'rb') as f:
+            sleep(1)
+            print("\nHere is your drink")
+            print(f.read().decode())
         return items[num-1]
     elif num != 0:
         order.append(items[num-1])
+        with open(items[num-1]["image"], 'rb') as f:
+            sleep(1)
+            print("\nHere is your drink")
+            print(f.read().decode())
         return items[num-1]
     else:
         return None
@@ -204,7 +214,82 @@ def dessert():
         more = binary("\nDo you want to order another dessert? (yes/no): ")
     return ordered
 
-for i in entrees():
-    with open(i, 'rb') as f:
-        print(f.read().decode())
-print(order)
+def giveCourse(course):
+    for i in course:
+        with open(i, 'rb') as f:
+            print(f.read().decode())
+            sleep(2)
+
+def refill(drink):
+    if binary("\nWould you like your drink refilled? (yes/no): "):
+        with open(drink["image"], 'rb') as f:
+            print(f.read().decode())
+    else:
+        if binary("\nWould you like a new drink? (yes/no): "):
+            drink = drinks()
+    return drink
+
+def receipt(order):
+    subtotal = 0.00
+    f = open("receipt.txt", 'w')
+    f.write("+" + "-" * 41 + "+")
+    f.write("\n|" + " " * 17 + "Receipt" + " " * 17 + "|\n")
+    f.write("|" + "-" * 41 + "|")
+    for i in order:
+        subtotal += i["price"]
+        line = i["name"] + "   $" + str("{:.2f}".format(round(i["price"], 2))) + "  "
+        f.write("\n|" + " " * (41 - len(line)) + line + "|")
+    f.write("\n|" + " " * 41 + "|")
+    while True:
+        try:
+            grat = float(input("\nWhat percent would you like to give as a tip?: "))
+            if 0 <= grat <= 100:
+                break
+        except:
+            pass
+    sub = "Subtotal   $" + str("{:.2f}".format(round(subtotal, 2))) + "  "
+    tax = "Tax    $" + str("{:.2f}".format(round(subtotal*0.05, 2))) + "  "
+    tip = "Tip    $" + str("{:.2f}".format(round(subtotal*(grat/100), 2))) + "  "
+    for i in [sub, tax, tip]:
+        f.write("\n|" + " " * (41-len(i)) + i + "|")
+    f.write("\n|" + " " * 41 + "|")
+    total = "Total   $" + str("{:.2f}".format(round(subtotal*(1.05 + (grat/100)), 2))) + "  "
+    f.write("\n|" + " " * (41-len(total)) + total + "|")
+    f.write("\n+" + "-" * 41 + "+")
+    f.close()
+    f = open("receipt.txt")
+    print(f.read())
+
+sleep(1)
+drink = drinks()
+print("\nI will get you the meal menus in a moment")
+sleep(1)
+input("\nPress enter when you are ready to see the appetizers")
+appys = appetizers()
+print("\nI'll bring the entree menu right away")
+sleep(1)
+mains = entrees()
+sleep(1)
+print("\nExcellent. We will get you your food right away.")
+sleep(1)
+input("\nPress enter to recieve your food.")
+if len(appys) > 0:
+    giveCourse(appys)
+    drink = refill(drink)
+    sleep(1)
+    input("\nPress enter to recieve your entrees")
+if len(mains) > 0:
+    giveCourse(mains)
+    drink = refill(drink)
+sleep(1)
+print("\nI will bring the dessert menu now")
+sleep(1)
+desserts = dessert()
+giveCourse(desserts)
+refill(drink)
+sleep(1)
+print("\nI will bring you the bill now {}".format(name))
+sleep(2)
+receipt(order)
+sleep(1)
+print("\nHave a great day {}!".format(name))
