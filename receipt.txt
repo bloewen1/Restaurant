@@ -1,14 +1,15 @@
 +-----------------------------------------+
 |                 Receipt                 |
 |-----------------------------------------|
+|                    Apple Juice   $1.50  |
+|                         Nachos   $6.00  |
+|       Steak + Mashed Potatoes   $27.00  |
 |                         Coffee   $6.50  |
-|            Spicy Buffalo Wings   $7.50  |
-|          Steak + Baked Potato   $27.00  |
-|                 Ice Cream Cone   $5.00  |
+|                 Chocolate Cake   $9.00  |
 |                                         |
-|                      Subtotal   $46.00  |
-|                           Tax    $2.30  |
-|                           Tip    $6.90  |
+|                      Subtotal   $50.00  |
+|                           Tax    $2.50  |
+|                          Tip    $10.00  |
 |                                         |
-|                         Total   $55.20  |
+|                         Total   $62.50  |
 +-----------------------------------------+
