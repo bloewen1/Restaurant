@@ -1,15 +1,16 @@
+
 +-----------------------------------------+
 |                 Receipt                 |
 |-----------------------------------------|
-|                    Apple Juice   $1.50  |
-|                         Nachos   $6.00  |
-|       Steak + Mashed Potatoes   $27.00  |
-|                         Coffee   $6.50  |
-|                 Chocolate Cake   $9.00  |
+|                             Tea  $5.00  |
+|             Spicy Buffalo Wings  $7.50  |
+|           Burger + Onion Rings  $16.50  |
+|                    Orange Crush  $2.50  |
+|                      Apple Pie  $11.50  |
 |                                         |
-|                      Subtotal   $50.00  |
-|                           Tax    $2.50  |
-|                          Tip    $10.00  |
+|                      Subtotal   $43.00  |
+|                           Tax    $2.15  |
+|                           Tip    $6.45  |
 |                                         |
-|                         Total   $62.50  |
+|                         Total   $51.60  |
 +-----------------------------------------+

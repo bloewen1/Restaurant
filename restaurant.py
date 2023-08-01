@@ -280,7 +280,7 @@ def receipt(order):
     f = open("receipt.txt")
     print(f.read())
 
-
+#Start of the ordering experience
 sleep(1)
 #Give the drinks menu. The drinks function will print out the drink's text file
 drink = drinks()
