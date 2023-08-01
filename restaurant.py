@@ -251,7 +251,7 @@ def receipt(order):
     for i in order:
         subtotal += i["price"]
         #Convert the price rounded to two decimals to a string and concatenate it with the item's name
-        line = i["name"] + "   $" + str("{:.2f}".format(round(i["price"], 2))) + "  "
+        line = i["name"] + "  $" + str("{:.2f}".format(round(i["price"], 2))) + "  "
         #Write a line with enough spaces to make inbetween the sides 41 characters long
         f.write("\n|" + " " * (41 - len(line)) + line + "|")
     f.write("\n|" + " " * 41 + "|")
