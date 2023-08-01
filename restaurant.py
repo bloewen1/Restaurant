@@ -244,7 +244,7 @@ def receipt(order):
     #Open receipt.txt in write mode
     f = open("receipt.txt", 'w')
     #Create the header in receipt.txt
-    f.write("+" + "-" * 41 + "+")
+    f.write("\n+" + "-" * 41 + "+")
     f.write("\n|" + " " * 17 + "Receipt" + " " * 17 + "|\n")
     f.write("|" + "-" * 41 + "|")
     #For every item ordered, add the price to the subtotal
